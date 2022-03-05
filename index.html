@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .p {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .zoom {
+            padding: 50px;
+            transition: transform .2s; /* Animation */
+            width: 100px;
+            height: 100px;
+        }
+
+            .zoom:hover {
+                transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+
+        table {
+            font-family: arial, sans-serif;
+            width: 50%;
+        }
+
+        td, th {
+            border: 1px solid #04AA6D;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #04AA6D;
+        }
+        /* Style the navigation bar */
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+            /* Navbar links */
+            .navbar a {
+                float: left;
+                text-align: center;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                /* Navbar links on mouse-over */
+                .navbar a:hover {
+                    background-color: #000;
+                }
+
+        /* Current/active navbar link */
+        .active {
+            background-color: #04AA6D;
+        }
+
+        /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 30px;
+        }
+
+        .body {
+            background-color: #F9D89A;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #1abc9c;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Music Library: Imagesound</title>
+</head>
+<body class="body">
+    <div class="header">
+        <h1>Music Library</h1>
+    </div>
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <br>
+    <table style="float:right;">
+        <tr>
+            <th>Track Name</th>
+            <th>Track Genre</th>
+            <th>Track Duration</th>
+            <th>Artist Name</th>
+        </tr>
+        <tr>
+            <td>Track Number 1</td>
+            <td>Rock</td>
+            <td>02:22:01</td>
+            <td>Track Artist 1</td>
+        </tr>
+        <tr>
+            <td>Track Number 2</td>
+            <td>Pop</td>
+            <td>03:45:01</td>
+            <td>Track Artist 2</td>
+        </tr>
+        <tr>
+            <td>Track Number 3</td>
+            <td>Jazz</td>
+            <td>03:45:01</td>
+            <td>Track Artist 3</td>
+        </tr>
+        <tr>
+            <td>Track Number 4</td>
+            <td>Pop</td>
+            <td>02:59:01</td>
+            <td>Track Artist 4</td>
+        </tr>
+
+    </table>
+    <p style="font-size: 2.5em;">Hover over the image to make it bigger.</p>
+    <div class="zoom">
+        <img src="image.jpg" style="width: 100px; height: 100px;" alt="Vinyl Record">
+
+
+    </div>
+    <br>
+    <br>
+    <p style="font-size: 2.5em;">The contact page also works.</p>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>
