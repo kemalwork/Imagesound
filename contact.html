@@ -1,82 +1,110 @@
 
 <html>
 <head>
-<style>
-    
+    <style>
+        .container {
+            float: right;
+            padding-right: 100px;
+        }
         /* Style the navigation bar */
-    .navbar {
-      width: 100%;
-      background-color: #555;
-      overflow: auto;
-    }
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
 
-    /* Navbar links */
-    .navbar a {
-      float: left;
-      text-align: center;
-      padding: 12px;
-      color: white;
-      text-decoration: none;
-      font-size: 17px;
-    }
+            /* Navbar links */
+            .navbar a {
+                float: left;
+                text-align: center;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+            }
 
-    /* Navbar links on mouse-over */
-    .navbar a:hover {
-      background-color: #000;
-    }
+                /* Navbar links on mouse-over */
+                .navbar a:hover {
+                    background-color: #000;
+                }
 
-    /* Current/active navbar link */
-    .active {
-      background-color: #04AA6D;
-    }
+        /* Current/active navbar link */
+        .active {
+            background-color: #04AA6D;
+        }
 
-    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-    @media screen and (max-width: 500px) {
-      .navbar a {
-        float: none;
-        display: block;
-      }
-    }
-.header {
-  width: 100%;
-  height: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
-    .body {
-    background-color: #F9D89A;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #1abc9c;
-  color: white;
-  text-align: center;
-}
-</style>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 30px;
+        }
+
+        .body {
+            background-color: #F9D89A;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #1abc9c;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Music Library: Imagesound</title>
 </head>
 <body class="body">
-  <div class="header">
-  <h1>Header</h1>  
-</div>
-<div class="navbar">
-  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a class="active" href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-</div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152260.66967451829!2d-1.6395382740583975!3d53.39563467905595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48790aa9fae8be15%3A0x3e2827f5af06b078!2sSheffield!5e0!3m2!1sen!2suk!4v1646504119913!5m2!1sen!2suk" width="600" height="450" style="border:0; float: right;" allowfullscreen="" loading="lazy" ></iframe>
-<p style="font-size: 2.5em;">You can call: 01234567891</p>
-<p style="font-size: 2.5em;">You can email: placeholder@email.com</p>
-<p style="font-size: 2.5em;">Visit our website: <a href="https://www.google.com/">Google Link</a></p>
-   
-<div class="footer">
-  <p>Footer</p>
-</div>
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active" href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152260.66967451829!2d-1.6395382740583975!3d53.39563467905595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48790aa9fae8be15%3A0x3e2827f5af06b078!2sSheffield!5e0!3m2!1sen!2suk!4v1646504119913!5m2!1sen!2suk" width="600" height="450" style="border:0; float: right;" allowfullscreen="" loading="lazy"></iframe>
+    <p style="font-size: 2.5em;">You can call: 01234567891</p>
+    <p style="font-size: 2.5em;">You can email: placeholder@email.com</p>
+    <p style="font-size: 2.5em;">Visit our website: <a href="https://www.google.com/">Google Link</a></p>
+    <div class="container">
+        <form action="#">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <br>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <br> <br>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
 </body>
 </html>
