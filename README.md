@@ -1,7 +1,9 @@
 # Imagesound
 This is apart of the challenge for the software engineering placement 2022.
-There are 6 files in this repository not including this one.
+There are 7 files in this repository not including this one.
 Each file is explained below:
+
+-The file named 'imagesounddatabase.PNG' is a screen capture taken to showcase the database diagram i created for the database to show how the relationship within the database is.
 
 -The file named 'Method_with_0_references.cs' is a c# file which contains a method called "GetMusicTracks()" which returns a list of tracks for a given genre. Also, the method validates for zero duration tracks and prevents them from being returned.
 
@@ -17,3 +19,5 @@ Each file is explained below:
 
 ############NOTE############
 I did attempt to retrieve information from the database and query it to a table in html but had no luck. I did however, manage to get it to work with a local host database with MySQL and PHPMyadmin. This was done by using php to establish a connection then using php to query the database and input it into the table.
+
+Also, i decided to use microsoft azure to host my database as it gave me the ability to add tables, database diagrams and more functionality that i am already familar and comfortable with as i am using this in my classes at University.
